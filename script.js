@@ -32,7 +32,7 @@ const createPlantCard = (plant) => `
         <span class="bg-green-100 text-green-700 rounded-full px-4 py-[6px] w-fit text-[15px] font-medium">${plant.category}</span>
         <span class="font-medium">৳${plant.price}</span>
       </div>
-      <button class="mt-auto bg-green-700 w-full py-2 rounded-full text-white font-semibold add-to-cart">Add to Cart</button>
+      <button class="mt-auto bg-green-700 w-full py-2 rounded-full text-white add-to-cart">Add to Cart</button>
     </div>
   </div>
 `;
