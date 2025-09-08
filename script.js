@@ -28,8 +28,9 @@ const createPlantCard = (plant) => `
     <div class="p-4 pt-2 flex flex-col flex-1">
       <h2 class="text-base font-bold mb-2 cursor-pointer truncate card-title">${plant.name}</h2>
       <p class="font-light text-gray-600 text-sm mb-2 truncate">${plant.short_description || plant.description || ''}</p>
-      <div class="flex items-center mb-2">
+      <div class="flex items-center justify-between mb-2">
         <span class="bg-green-100 text-green-700 rounded-full px-4 py-[6px] w-fit text-[15px] font-medium">${plant.category}</span>
+        <span class="font-medium">৳${plant.price}</span>
       </div>
       <button class="mt-auto bg-green-700 w-full py-2 rounded-full text-white font-semibold add-to-cart">Add to Cart</button>
     </div>
