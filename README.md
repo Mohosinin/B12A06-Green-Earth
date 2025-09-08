@@ -39,7 +39,7 @@ Example:
 js
 let [a, b] = [10, 20]; // a=10, b=20
 
-let {name, age} = {name: "Alice", age: 25}; // name="Alice", age=25
+let {name, age} = {name: "sakib", age: 25}; // name="sakib", age=25
 
 
 5) Template literals in ES6
@@ -48,7 +48,7 @@ Template literals are strings made with backticks ` instead of quotes. The cool 
 Example:
 
 js
-let name = "Alice";
+let name = "sakib";
 let age = 25;
 
 // Old way
