@@ -1,169 +1,58 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
+1) Difference between var, let, and const
+var: The old way. It can be used anywhere in its function, which sometimes causes weird bugs.
 
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
+let: The modern way when you know the value might change. It only works inside the block { } where you declare it.
 
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
+const: Like let, but the value never changes. It’s fixed once you set it.
 
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
 
----
-# Green Earth
 
+2) Difference between map(), forEach(), and filter()
+forEach: Just loops through items. You usually use it to do something with each item (like printing to the console). It doesn’t return anything new.
 
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
+map: Loops and makes a new array, where every item is changed in some way.
 
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
+filter: Loops and returns a new array with only the items that match your condition.
 
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
 
 
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
+3) Arrow functions in ES6
+Arrow functions are just a shorter, cleaner way to write functions. They also handle the this keyword better, which makes code less confusing.
 
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
+Example:
 
+js
+// Normal function
+function sayHi(name) {
+  return "Hello " + name;
+}
 
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
+// Arrow function
+const sayHi = (name) => `Hello ${name}`;
 
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
 
-4. Get 🌴Plants Detail <br/>
+4) Destructuring assignment in ES6
+Destructuring is a fancy word for pulling values out of arrays and objects easily.
 
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
+Example:
 
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
+js
+let [a, b] = [10, 20]; // a=10, b=20
 
+let {name, age} = {name: "Alice", age: 25}; // name="Alice", age=25
 
 
+5) Template literals in ES6
+Template literals are strings made with backticks ` instead of quotes. The cool part is you can drop variables right inside using ${} without having to use +. They also let you write multi-line text easily.
 
-## ✅ Main Requirements 
+Example:
 
-#### 1) Navbar
+js
+let name = "Alice";
+let age = 25;
 
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
+// Old way
+let text1 = "My name is " + name + " and I am " + age + " years old.";
 
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
-
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
-
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
-
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
-
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
-
----
-#### 7) Create a README file to answer the following question-
-
-
-#### 1) What is the difference between var, let, and const?
-
-#### 2) What is the difference between map(), forEach(), and filter()? 
-
-#### 3) What are arrow functions in ES6?
-
-#### 4) How does destructuring assignment work in ES6?
-
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
-
-## ⚙️ Functionalities 
-
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
-
-
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
+// ES6 way
+let text2 = `My name is ${name} and I am ${age} years old.`;
